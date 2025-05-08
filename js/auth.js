@@ -2,7 +2,7 @@
 function checkAuth() {
     const currentUser = localStorage.getItem('currentUser');
     if (!currentUser && !window.location.href.includes('/pages/login.html') && !window.location.href.includes('/pages/register.html')) {
-        window.location.href = '/pages/login.html';
+        window.location.href = pages/login.html;
     }
 }
 
