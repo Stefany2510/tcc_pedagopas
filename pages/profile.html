@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - PedagoPass</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.svg" alt="PedagoPass" height="40">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="../index.html#destinos">Destinos</a>
+                <a href="../index.html#pacotes">Pacotes</a>
+                <a href="profile.html" class="active">Perfil</a>
+                <a href="#" onclick="logout()" class="logout-btn">Sair</a>
+            </div>
+        </nav>
+
+        <main class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 id="userName">Carregando...</h1>
+                    <p id="userSchool">Carregando...</p>
+                    <p id="userEmail">Carregando...</p>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <section class="profile-section">
+                    <h2>Minhas Viagens</h2>
+                    <div class="trips-grid">
+                        <div class="trip-card upcoming">
+                            <div class="trip-status">Próxima Viagem</div>
+                            <h3>Roma Cultural</h3>
+                            <p>Data: 15/07/2024</p>
+                            <p>Status: Confirmado</p>
+                            <button class="btn-primary">Ver Detalhes</button>
+                        </div>
+                        <div class="trip-card past">
+                            <div class="trip-status">Viagem Realizada</div>
+                            <h3>Paris Educacional</h3>
+                            <p>Data: 10/01/2024</p>
+                            <p>Status: Concluído</p>
+                            <button class="btn-secondary">Ver Fotos</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="profile-section">
+                    <h2>Preferências de Viagem</h2>
+                    <form id="preferencesForm" class="preferences-form">
+                        <div class="form-group">
+                            <label>Interesses:</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="interests" value="historia"> História</label>
+                                <label><input type="checkbox" name="interests" value="arte"> Arte</label>
+                                <label><input type="checkbox" name="interests" value="ciencia"> Ciência</label>
+                                <label><input type="checkbox" name="interests" value="cultura"> Cultura</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Orçamento Preferido:</label>
+                            <select id="budget" name="budget">
+                                <option value="economico">Econômico</option>
+                                <option value="moderado">Moderado</option>
+                                <option value="luxo">Luxo</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Salvar Preferências</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

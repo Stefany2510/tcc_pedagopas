@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <style>
+    .logo-text { 
+      font-family: 'Arial', sans-serif; 
+      font-weight: bold; 
+      font-size: 24px; /* Adicione o tamanho da fonte */
+    }
+    .pass { 
+      fill: #FFFFFF; 
+    }
+  </style>
+  <text x="50" y="35" class="logo-text pass">PedagoPass</text>
+</svg>

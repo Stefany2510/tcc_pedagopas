@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Viagens para Professores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <h1>ViagemProf</h1>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="login.html" class="active">Login</a>
+                <a href="register.html">Cadastro</a>
+            </div>
+        </nav>
+        <main class="auth-container">
+            <form id="loginForm" class="auth-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+            </form>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

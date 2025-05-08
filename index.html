@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedagoPass - Viagens para Professores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="PedagoPass" height="40">
+            </a>
+            <div class="nav-links">
+                <a href="#destinos">Destinos</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#pacotes">Pacotes</a>
+                <a href="#experiencias">Experiências</a>
+                <a href="#roteiros">Roteiros</a>
+                <a href="pages/profile.html">Perfil</a>
+                <span id="userInfo"></span>
+                <a href="#" onclick="logout()" class="logout-btn">Sair</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h1>Viagens Educacionais para Professores</h1>
+                <p>Descubra destinos incríveis com benefícios exclusivos para educadores</p>
+                <div class="hero-buttons">
+                    <a href="#pacotes" class="btn-primary">Ver Pacotes</a>
+                    <a href="#roteiros" class="btn-secondary">Montar Roteiro</a>
+                </div>
+            </section>
+
+            <section id="beneficios" class="section benefits">
+                <h2>Benefícios Exclusivos</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-percentage"></i>
+                        <h3>Descontos Especiais</h3>
+                        <p>Até 30% de desconto para professores</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Flexibilidade</h3>
+                        <p>Viaje nas férias escolares</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Conteúdo Pedagógico</h3>
+                        <p>Material didático incluso</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Networking</h3>
+                        <p>Encontre outros educadores</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="destinos" class="section">
+                <h2>Destinos em Destaque</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="images/destinations/grecia.jpg" alt="Grécia">
+                        <h3>Grécia Histórica</h3>
+                        <p>Explore a história antiga e mitologia</p>
+                        <div class="destination-info">
+                            <span class="duration"><i class="fas fa-clock"></i> 10 dias</span>
+                            <span class="price">A partir de R$ 5.999</span>
+                        </div>
+                        <button class="btn-primary">Saiba Mais</button>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/destinations/roma.jpg" alt="Roma">
+                        <h3>Roma Cultural</h3>
+                        <p>Arte, arquitetura e gastronomia</p>
+                        <div class="destination-info">
+                            <span class="duration"><i class="fas fa-clock"></i> 8 dias</span>
+                            <span class="price">A partir de R$ 6.499</span>
+                        </div>
+                        <button class="btn-primary">Saiba Mais</button>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/destinations/paris.jpg" alt="Paris">
+                        <h3>Paris Educacional</h3>
+                        <p>Museus, história e cultura</p>
+                        <div class="destination-info">
+                            <span class="duration"><i class="fas fa-clock"></i> 7 dias</span>
+                            <span class="price">A partir de R$ 5.799</span>
+                        </div>
+                        <button class="btn-primary">Saiba Mais</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pacotes" class="section packages">
+                <h2>Pacotes Educacionais</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-badge">Mais Popular</div>
+                        <h3>Pacote Cultural</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Visitas guiadas a museus</li>
+                            <li><i class="fas fa-check"></i> Workshop com educadores locais</li>
+                            <li><i class="fas fa-check"></i> Material didático</li>
+                            <li><i class="fas fa-check"></i> 7 noites de hospedagem</li>
+                            <li><i class="fas fa-check"></i> Café da manhã incluso</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price-value">R$ 4.999</span>
+                            <span class="price-period">/pessoa</span>
+                        </div>
+                        <button class="btn-primary">Reservar Agora</button>
+                    </div>
+                    <div class="package-card">
+                        <h3>Pacote Histórico</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Sítios arqueológicos</li>
+                            <li><i class="fas fa-check"></i> Aulas de história local</li>
+                            <li><i class="fas fa-check"></i> Guia especializado</li>
+                            <li><i class="fas fa-check"></i> 5 noites de hospedagem</li>
+                            <li><i class="fas fa-check"></i> Café da manhã incluso</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price-value">R$ 3.999</span>
+                            <span class="price-period">/pessoa</span>
+                        </div>
+                        <button class="btn-primary">Reservar Agora</button>
+                    </div>
+                    <div class="package-card">
+                        <h3>Pacote Científico</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Visitas a centros de pesquisa</li>
+                            <li><i class="fas fa-check"></i> Laboratórios interativos</li>
+                            <li><i class="fas fa-check"></i> Palestras científicas</li>
+                            <li><i class="fas fa-check"></i> 6 noites de hospedagem</li>
+                            <li><i class="fas fa-check"></i> Café da manhã incluso</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price-value">R$ 4.499</span>
+                            <span class="price-period">/pessoa</span>
+                        </div>
+                        <button class="btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experiencias" class="section experiences">
+                <h2>Experiências Únicas</h2>
+                <div class="experiences-grid">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="images/destinations/workshop.jpg" alt="Workshop">
+                        </div>
+                        <div class="experience-content">
+                            <h3>Workshop de Metodologias</h3>
+                            <p>Aprenda com educadores internacionais</p>
+                            <span class="experience-price">R$ 799</span>
+                            <button class="btn-primary">Reservar</button>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="images/destinations/museum.jpg" alt="Museu">
+                        </div>
+                        <div class="experience-content">
+                            <h3>Tour Museus Noturnos</h3>
+                            <p>Visitas exclusivas após o horário</p>
+                            <span class="experience-price">R$ 599</span>
+                            <button class="btn-primary">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roteiros" class="section custom-tours">
+                <h2>Monte Seu Roteiro</h2>
+                <div class="custom-tour-builder">
+                    <div class="tour-options">
+                        <div class="option-group">
+                            <h3>Escolha o Destino</h3>
+                            <select id="destination" class="tour-select">
+                                <option value="">Selecione um destino</option>
+                                <option value="paris">Paris, França</option>
+                                <option value="roma">Roma, Itália</option>
+                                <option value="atenas">Atenas, Grécia</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <h3>Duração</h3>
+                            <select id="duration" class="tour-select">
+                                <option value="">Selecione a duração</option>
+                                <option value="5">5 dias</option>
+                                <option value="7">7 dias</option>
+                                <option value="10">10 dias</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <h3>Tipo de Experiência</h3>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="experience" value="cultural"> Cultural</label>
+                                <label><input type="checkbox" name="experience" value="historical"> Histórica</label>
+                                <label><input type="checkbox" name="experience" value="scientific"> Científica</label>
+                            </div>
+                        </div>
+                        <button class="btn-primary" onclick="calculateCustomTour()">Calcular Roteiro</button>
+                    </div>
+                    <div id="tourResult" class="tour-result"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>Especialistas em viagens educacionais para professores desde 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@pedagopass.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email">
+                        <button type="submit" class="btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PedagoPass - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom-tour.js"></script>
+</body>
+</html>
